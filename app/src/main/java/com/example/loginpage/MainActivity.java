@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         singup= findViewById(R.id.btsignup);
         login= findViewById(R.id.btlogin);
-//hello
+//hell
+
+        System.out.println("hello ");
         in_email= findViewById(R.id.email);
         in_pass= findViewById(R.id.Password);
         login.setOnClickListener(new View.OnClickListener() {
