@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="src_over"
+    android:foregroundTintMode="screen"
+    tools:context=".MainActivity"
+
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView2"
+        android:layout_width="425dp"
+        android:layout_height="234dp"
+        android:padding="0dp"
+        app:circularflow_defaultRadius="44in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/circular"
+
+        app:srcCompat="@drawable/cover"
+        tools:ignore="InOrMmUsage,MissingConstraints"
+        tools:layout_editor_absoluteY="-28dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="282dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_round"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textEmailAddress"
+
+        android:paddingStart="15dp"
+        android:shadowColor="#CF0F0F"
+        android:shadowDx="4"
+        android:drawableLeft="@drawable/phone_24"
+        android:drawablePadding="14dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787676"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.13"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="282dp"
+        android:layout_height="60dp"
+        android:elevation="66dp"
+        android:background="@drawable/edit_round"
+        android:ems="12"
+
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/keyvec"
+        android:drawablePadding="14dp"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#787676"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+
+        android:text="LOGIN"
+        android:textSize="24dp"
+
+        android:background="@drawable/bt_round"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/btsignup"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+
+        android:background="@drawable/bt_round"
+        android:text="SIGNIN"
+        android:textSize="24dp"
+        android:backgroundTintMode="add"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btlogin"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="270dp"
+        android:layout_height="177dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:srcCompat="@drawable/login2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
